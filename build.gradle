@@ -1,0 +1,48 @@
+plugins {
+	id 'java'
+	id 'application'
+	id "com.diffplug.spotless" version "6.12.0"
+}
+
+spotless {
+	java {
+		googleJavaFormat()
+		formatAnnotations()
+	}
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenLocal()
+	maven { url 'https://maven.aliyun.com/repository/public/' }
+	maven { url 'https://maven.aliyun.com/repository/spring/'}
+	maven { url 'https://maven.aliyun.com/repository/google/'}
+	maven { url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+	maven { url 'https://maven.aliyun.com/repository/spring-plugin/'}
+	maven { url 'https://maven.aliyun.com/repository/grails-core/'}
+	maven { url 'https://maven.aliyun.com/repository/apache-snapshots/'}
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.projectlombok:lombok:1.18.26'
+	implementation 'org.jetbrains:annotations:23.0.0'
+	annotationProcessor 'org.projectlombok:lombok:1.18.26'
+	implementation 'com.google.code.gson:gson:2.10.1'
+	implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+	implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+	implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+	implementation 'org.slf4j:slf4j-api:1.7.36'
+}
+
+jar {
+	manifest {
+		attributes 'Main-Class' : 'com.example.demo.DemoApplication'
+	}
+}
+application {
+	mainClassName 'com.example.demo.DemoApplication'
+}

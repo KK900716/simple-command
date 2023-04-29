@@ -1,0 +1,94 @@
+2023-04-10 at 20:37:27 CST [main] [DEBUG]  c.r.~.~.ConsumerWorkService - Creating executor service with 8 thread(s) for consumer work service
+2023-04-10 at 20:37:56 CST [main] [DEBUG]  c.r.~.~.ConsumerWorkService - Creating executor service with 8 thread(s) for consumer work service
+2023-04-10 at 20:38:37 CST [main] [DEBUG]  c.r.~.~.ConsumerWorkService - Creating executor service with 8 thread(s) for consumer work service
+2023-04-29 at 19:52:22 CST [pool-2-thread-1] [INFO]  c.e.~.~.Deamon - Deamon start!
+2023-04-29 at 22:15:29 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:15:37 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 1.
+2023-04-29 at 22:15:37 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 2.
+2023-04-29 at 22:15:41 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 3.
+2023-04-29 at 22:15:43 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 4.
+2023-04-29 at 22:25:33 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:26:56 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:27:32 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:28:14 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:28:36 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:29:06 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:36:15 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:36:32 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:36:47 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:37:05 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:39:51 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:42:54 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:49:52 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:49:59 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 1.
+2023-04-29 at 22:50:02 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 1.
+2023-04-29 at 22:50:05 CST [Controller] [DEBUG]  c.e.~.~.~.ControllerManager - consoleBlockQueue size: 2.
+2023-04-29 at 22:55:35 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:55:35 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print]
+2023-04-29 at 22:57:12 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:57:12 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 22:57:16 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 22:58:22 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:58:22 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 22:58:24 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 22:58:30 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:58:30 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 22:58:35 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 22:58:52 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:58:52 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 22:58:54 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 22:58:54 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 1
+2023-04-29 at 22:59:27 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 22:59:27 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 22:59:30 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 22:59:30 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - null
+2023-04-29 at 23:00:47 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:00:47 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:00:49 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:00:58 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:01:19 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:02:10 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 1
+2023-04-29 at 23:02:10 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:02:10 CST [execute] [INFO]  c.e.~.~.~.ControllerManager - Command: quit. Program termination.
+2023-04-29 at 23:03:23 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:03:23 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:03:27 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:03:27 CST [execute] [INFO]  c.e.~.~.~.ControllerManager - Command: quit. Program termination.
+2023-04-29 at 23:03:44 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:03:44 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:03:49 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:03:49 CST [execute] [INFO]  c.e.~.~.~.ControllerManager - Command: quit. Program termination.
+2023-04-29 at 23:09:12 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:09:12 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:09:23 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:09:23 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:10:01 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:10:01 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:12:50 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:12:50 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:13:14 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:13:14 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:13:26 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:13:26 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:14:34 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:14:34 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:16:58 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:17:06 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:17:06 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:17:10 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:17:32 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:17:32 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print].
+2023-04-29 at 23:17:38 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:07 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:14 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:14 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:15 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 1
+2023-04-29 at 23:18:15 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 2
+2023-04-29 at 23:18:15 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 1
+2023-04-29 at 23:18:15 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:16 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:18:16 CST [execute] [DEBUG]  c.e.~.~.~.ControllerManager - 0
+2023-04-29 at 23:21:33 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:21:33 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-29 at 23:25:20 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:25:20 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
