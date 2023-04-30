@@ -9,6 +9,5 @@ public class Manager {
     Deamon.startDeamon();
     ControllerManager.initWindow();
     ControllerManager.startController();
-    ControllerManager.consumingMessages();
   }
 }

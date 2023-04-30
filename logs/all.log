@@ -92,3 +92,17 @@
 2023-04-29 at 23:21:33 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
 2023-04-29 at 23:25:20 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
 2023-04-29 at 23:25:20 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-29 at 23:28:08 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-29 at 23:28:08 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-29 at 23:30:56 CST [execute] [INFO]  c.e.~.~.~.SystemCommand - Command: quit. Program termination.
+2023-04-30 at 16:03:21 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 at 16:03:21 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-30 at 16:04:35 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 at 16:04:35 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-30 at 16:05:32 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 at 16:05:32 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Read in all compiled commands :[print, hou].
+2023-04-30 at 16:24:19 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 at 16:24:19 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[print, hou].
+2023-04-30 at 16:24:55 CST [input] [INFO]  c.e.~.~.~.SystemCommand - Command: q. Program termination.
+2023-04-30 at 16:25:07 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 at 16:25:07 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[print, hou].
