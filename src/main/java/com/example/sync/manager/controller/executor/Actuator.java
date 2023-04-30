@@ -135,6 +135,16 @@ public class Actuator {
             for (Parameter parameter : parameters) {
               com.example.sync.common.annotation.Parameter parameterAnnotation =
                   parameter.getAnnotation(com.example.sync.common.annotation.Parameter.class);
+              if (parameterAnnotation == null) {
+                throw new InnerRuntimeExecution(
+                    "Class: "
+                        + clazz.getName()
+                        + ", Method: "
+                        + method.getName()
+                        + ", Parameter: "
+                        + parameter.getName()
+                        + ", is not Parameter annotation!");
+              }
               parameterEntity.add(new ClassEntity.ParameterEntity(parameter, parameterAnnotation));
             }
             command.put(

@@ -4,7 +4,6 @@ import com.example.sync.common.reflection.ClassEntity;
 import com.example.sync.manager.controller.console.ControllerInterface;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -13,6 +12,8 @@ import java.util.Map;
  */
 public class SyntaxInterpreter {
   private final Map<String, ClassEntity<ControllerInterface>> cache;
+  private static final int PARAMETER_MAX = 10;
+  private final String PARAMETER_SEPARATOR = ":";
 
   public SyntaxInterpreter(Map<String, ClassEntity<ControllerInterface>> cache) {
     this.cache = cache;
@@ -32,29 +33,33 @@ public class SyntaxInterpreter {
   private SyntaxRes getSyntaxRes(List<String> segment, ClassEntity<ControllerInterface> entity) {
     Method method = entity.getMethod();
     List<ClassEntity.ParameterEntity> parameters = entity.getParameters();
-    Collection<ClassEntity.ParameterEntity> list = parameters;
-    Object[] objects = new Object[list.size()];
+    Map<String, Integer> parametersIndex = entity.getParametersIndex();
+    Object[] objects = new Object[parameters.size()];
+    if (segment.size() > PARAMETER_MAX) {
+      System.out.println("You parameter too many, please enter again.");
+      return null;
+    }
     if (segment.size() > 1) {
       for (int i = 1; i < segment.size(); i++) {
-        String[] split = segment.get(i).split(":");
+        String[] split = segment.get(i).split(PARAMETER_SEPARATOR);
         if (split.length > 2) {
           System.out.println("You entered too many \":\", please enter again.");
           return null;
         }
-        // TODO 有参方法
-        for (int j = 0; j < ; j++) {
-
+        Integer index = parametersIndex.get(split[0]);
+        if (index != null) {
+          if (split.length == 1) {
+            objects[index] = parameters.get(index).getParameterAnnotation().defaultV();
+          } else {
+            objects[index] = split[1];
+          }
+        } else {
+          System.out.println("Parameter \"" + split[0] + "\" is incorrect, please re-enter.");
+          return null;
         }
       }
-    } else {
-      for (int i = 0; i < list.size(); i++) {
-        com.example.sync.common.annotation.Parameter annotation =
-            parameters.get(i).getParameterAnnotation();
-        objects[i] = annotation.defaultV();
-      }
-      return new SyntaxRes(method, entity.getObj(), objects);
     }
-    return null;
+    return new SyntaxRes(method, entity.getObj(), objects);
   }
 
   private List<String> split(String console) {

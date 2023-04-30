@@ -26,4 +26,11 @@ public class ControllerTest implements ControllerInterface {
   public void test3(@Parameter(value = "-p", defaultV = "abc") String p) {
     System.out.println(p);
   }
+
+  @Console("pant")
+  public void test4(
+      @Parameter(value = "-f", defaultV = "tek") String t, @Parameter("-t") String u) {
+    System.out.println(t);
+    System.out.println(u);
+  }
 }
