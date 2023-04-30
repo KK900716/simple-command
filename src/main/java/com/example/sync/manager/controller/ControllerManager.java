@@ -1,8 +1,8 @@
 package com.example.sync.manager.controller;
 
 import com.example.sync.common.exception.InnerException;
-import com.example.sync.manager.controller.syntax.Actuator;
-import com.example.sync.manager.controller.syntax.Prompt;
+import com.example.sync.manager.controller.executor.Actuator;
+import com.example.sync.manager.controller.executor.Prompt;
 import java.util.*;
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,7 +15,7 @@ public class ControllerManager {
               Scanner input = new Scanner(System.in);
               while (true) {
                 System.out.print(Prompt.getPrompt());
-                Actuator.executeConsole(input.nextLine());
+                Actuator.executeConsole(input.nextLine().stripLeading().stripTrailing());
               }
             },
             "input")
@@ -26,7 +26,7 @@ public class ControllerManager {
     System.out.println("-".repeat(100));
     System.out.println("|" + String.format("%98s", "") + "|");
     System.out.println(
-        "|" + String.format("%-98s", " ".repeat(35) + "Welcome sync to command!") + "|");
+        "|" + String.format("%-98s", " ".repeat(35) + "Welcome to sync command!") + "|");
     System.out.println("|" + String.format("%98s", "") + "|");
     System.out.println("-".repeat(100));
   }

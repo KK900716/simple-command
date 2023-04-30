@@ -1,4 +1,4 @@
-package com.example.sync.manager.controller.syntax;
+package com.example.sync.manager.controller.executor;
 
 import java.util.Date;
 

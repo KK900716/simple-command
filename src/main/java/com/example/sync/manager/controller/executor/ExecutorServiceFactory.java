@@ -1,4 +1,4 @@
-package com.example.sync.manager.controller;
+package com.example.sync.manager.controller.executor;
 
 import java.util.concurrent.ThreadFactory;
 import org.jetbrains.annotations.NotNull;

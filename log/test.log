@@ -1,2 +1,2 @@
-2023-04-30 16:25:07.784 [Deamon] [INFO] c.e.~.~.~.Deamon - Deamon start!
-2023-04-30 16:25:07.822 [main] [DEBUG] c.e.~.~.~.~.Actuator - Read in all compiled commands :[print, hou].
+2023-04-30 19:35:32.140 [Deamon] [INFO] c.e.~.~.~.Deamon - Deamon start!
+2023-04-30 19:35:32.178 [main] [DEBUG] c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, hou].
