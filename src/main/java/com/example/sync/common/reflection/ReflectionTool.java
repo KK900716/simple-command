@@ -2,7 +2,6 @@ package com.example.sync.common.reflection;
 
 import com.example.sync.common.exception.InnerException;
 import com.example.sync.common.exception.InnerRuntimeExecution;
-
 import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -15,8 +14,10 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
-import java.util.Map;
+import java.util.jar.JarEntry;
+import java.util.jar.JarFile;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -24,7 +25,6 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public final class ReflectionTool {
-
   private static final String CLASS = ".class";
   private static final String JAR = ".jar";
 
@@ -38,19 +38,43 @@ public final class ReflectionTool {
     } catch (URISyntaxException e) {
       throw new RuntimeException(e);
     }
-    String path;
     if (file.getName().endsWith(JAR)) {
-      path = location + "/" + packageName;
+      return getJarClass(clazz, annotation, location, packageName);
     } else {
-      path = location + packageName;
+      return getClass(clazz, annotation, location, packageName);
     }
-    // todo 打jar包问题为解决
-    log.info("{}", path);
+  }
+
+  private static <T> ArrayList<Class<T>> getClass(
+      Class<T> clazz, Class<?> annotation, URL location, String packageName) throws InnerException {
     ArrayList<Class<T>> res = new ArrayList<>();
     try {
       Files.walkFileTree(
-          Path.of(URI.create(path)), new InnerSimpleFileVisitor<>(clazz, annotation, res));
+          Path.of(URI.create(location + packageName)),
+          new InnerSimpleFileVisitor<>(clazz, annotation, res));
     } catch (IOException e) {
+      throw new InnerException(e);
+    }
+    return res;
+  }
+
+  private static <T> ArrayList<Class<T>> getJarClass(
+      Class<T> clazz, Class annotation, URL location, String packageName) throws InnerException {
+    ArrayList<Class<T>> res = new ArrayList<>();
+    try {
+      Enumeration<JarEntry> entries = new JarFile(location.toString()).entries();
+      while (entries.hasMoreElements()) {
+        JarEntry entry = entries.nextElement();
+        Class<?> aClass;
+        if (entry.getName().contains(packageName) && entry.getName().endsWith(CLASS)) {
+          aClass = Class.forName(entry.getName(), true, clazz.getClassLoader());
+          Annotation ano = aClass.getAnnotation(annotation);
+          if (ano != null) {
+            res.add((Class<T>) aClass);
+          }
+        }
+      }
+    } catch (IOException | ClassNotFoundException e) {
       throw new InnerException(e);
     }
     return res;

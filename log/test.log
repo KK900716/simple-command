@@ -1,7 +1,0 @@
-2023-05-01 13:30:42.789 [Deamon] [INFO] c.e.~.~.~.Deamon - Deamon start!
-2023-05-01 13:30:42.806 [main] [INFO] c.e.~.~.~.ReflectionTool - file:/C:/Users/44380/Downloads/demo%20(3)/demo/build/classes/java/main/
-2023-05-01 13:30:42.807 [main] [INFO] c.e.~.~.~.ReflectionTool - com/example/sync/manager/controller/console
-2023-05-01 13:30:42.808 [main] [INFO] c.e.~.~.~.ReflectionTool - file:/C:/Users/44380/Downloads/demo%20(3)/demo/build/classes/java/main/com/example/sync/manager/controller/console
-2023-05-01 13:30:42.808 [main] [INFO] c.e.~.~.~.ReflectionTool - main
-2023-05-01 13:30:42.809 [main] [INFO] c.e.~.~.~.ReflectionTool - false
-2023-05-01 13:30:42.832 [main] [DEBUG] c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
