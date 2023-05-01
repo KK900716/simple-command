@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ControllerManager {
   public static void startController() throws InnerException {
     Actuator.init();
+    log.debug("Finish init Actuator!");
     new Thread(
             () -> {
               Scanner input = new Scanner(System.in);

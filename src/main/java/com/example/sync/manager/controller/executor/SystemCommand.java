@@ -18,6 +18,7 @@ public final class SystemCommand {
       case "":
         return;
       default:
+        log.error("command: {} is error!", command);
         System.out.println("Unrecognized command, please re-enter!");
     }
   }

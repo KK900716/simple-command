@@ -27,11 +27,14 @@ import lombok.extern.slf4j.Slf4j;
 public final class ReflectionTool {
   private static final String CLASS = ".class";
   private static final String JAR = ".jar";
+  private static final String SLASH_SEPARATOR = "/";
+  private static final String POINT_SEPARATOR = ".";
+  private static final String ANY_MATCH = ".*";
 
   public static <T> List<Class<T>> getAllClass(Class<T> clazz, Class<?> annotation)
       throws InnerException {
     URL location = clazz.getProtectionDomain().getCodeSource().getLocation();
-    String packageName = clazz.getPackageName().replaceAll("\\.", "/");
+    String packageNamePath = clazz.getPackageName().replaceAll("\\.", "/");
     File file;
     try {
       file = new File(location.toURI());
@@ -39,19 +42,20 @@ public final class ReflectionTool {
       throw new RuntimeException(e);
     }
     if (file.getName().endsWith(JAR)) {
-      return getJarClass(clazz, annotation, location, packageName);
+      return getJarClass(clazz, annotation, location, packageNamePath);
     } else {
-      return getClass(clazz, annotation, location, packageName);
+      return getClass(clazz, annotation, location, packageNamePath);
     }
   }
 
   private static <T> ArrayList<Class<T>> getClass(
-      Class<T> clazz, Class<?> annotation, URL location, String packageName) throws InnerException {
+      Class<T> clazz, Class<?> annotation, URL location, String packageNamePath)
+      throws InnerException {
     ArrayList<Class<T>> res = new ArrayList<>();
     try {
       Files.walkFileTree(
-          Path.of(URI.create(location + packageName)),
-          new InnerSimpleFileVisitor<>(clazz, annotation, res));
+          Path.of(URI.create(location + packageNamePath)),
+          new InnerSimpleFileVisitor<>(clazz, annotation, res, packageNamePath));
     } catch (IOException e) {
       throw new InnerException(e);
     }
@@ -59,15 +63,24 @@ public final class ReflectionTool {
   }
 
   private static <T> ArrayList<Class<T>> getJarClass(
-      Class<T> clazz, Class annotation, URL location, String packageName) throws InnerException {
+      Class<T> clazz, Class annotation, URL location, String packageNamePath)
+      throws InnerException {
     ArrayList<Class<T>> res = new ArrayList<>();
-    try {
-      Enumeration<JarEntry> entries = new JarFile(location.toString()).entries();
+    try (JarFile jarFile = new JarFile(location.getFile())) {
+      Enumeration<JarEntry> entries = jarFile.entries();
       while (entries.hasMoreElements()) {
         JarEntry entry = entries.nextElement();
         Class<?> aClass;
-        if (entry.getName().contains(packageName) && entry.getName().endsWith(CLASS)) {
-          aClass = Class.forName(entry.getName(), true, clazz.getClassLoader());
+        if (entry.getName().contains(packageNamePath) && entry.getName().endsWith(CLASS)) {
+          String s =
+              clazz.getPackageName()
+                  + entry
+                      .getName()
+                      .replaceAll(packageNamePath, "")
+                      .replaceAll(CLASS, "")
+                      .replaceAll(SLASH_SEPARATOR, POINT_SEPARATOR);
+          log.info(s);
+          aClass = Class.forName(s, true, clazz.getClassLoader());
           Annotation ano = aClass.getAnnotation(annotation);
           if (ano != null) {
             res.add((Class<T>) aClass);
@@ -81,16 +94,19 @@ public final class ReflectionTool {
   }
 
   static class InnerSimpleFileVisitor<T> extends SimpleFileVisitor<Path> {
+    private final Class<T> clazz;
     private final ClassLoader loader;
-    private final String packageName;
     private final Class annotation;
     private final ArrayList<Class<T>> res;
+    private final String packageNamePath;
 
-    public InnerSimpleFileVisitor(Class<T> clazz, Class<?> annotation, ArrayList<Class<T>> res) {
+    public InnerSimpleFileVisitor(
+        Class<T> clazz, Class<?> annotation, ArrayList<Class<T>> res, String packageNamePath) {
+      this.clazz = clazz;
       this.loader = clazz.getClassLoader();
-      packageName = clazz.getPackageName();
       this.annotation = annotation;
       this.res = res;
+      this.packageNamePath = packageNamePath;
     }
 
     @Override
@@ -99,8 +115,17 @@ public final class ReflectionTool {
       if (name.endsWith(CLASS)) {
         Class<?> aClass;
         try {
-          String className = packageName + "." + name.replaceAll(CLASS, "");
-          aClass = Class.forName(className, true, loader);
+          aClass =
+              Class.forName(
+                  clazz.getPackageName()
+                      + POINT_SEPARATOR
+                      + file.toUri()
+                          .getPath()
+                          .replaceAll(ANY_MATCH + packageNamePath + SLASH_SEPARATOR, "")
+                          .replaceAll(SLASH_SEPARATOR, POINT_SEPARATOR)
+                          .replaceAll(CLASS, ""),
+                  true,
+                  loader);
         } catch (ClassNotFoundException e) {
           throw new InnerRuntimeExecution(e);
         }

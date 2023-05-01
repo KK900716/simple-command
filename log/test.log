@@ -1,0 +1,3 @@
+2023-05-02 00:12:54.536 [Deamon] [INFO] c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 00:12:54.580 [main] [DEBUG] c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 00:12:54.581 [main] [DEBUG] c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, pa, print, pant, hou].

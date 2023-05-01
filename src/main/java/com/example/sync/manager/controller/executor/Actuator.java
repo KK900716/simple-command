@@ -10,10 +10,7 @@ import com.example.sync.manager.controller.console.ControllerInterface;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -23,9 +20,7 @@ public class Actuator {
 
   public static void init() throws InnerException {
     List<Class<ControllerInterface>> controller =
-        ReflectionTool.getAllClass(
-            ControllerInterface.class,
-            Controller.class);
+        ReflectionTool.getAllClass(ControllerInterface.class, Controller.class);
     var cache = cacheAllCommands(controller);
     SYNTAX = new SyntaxInterpreter(cache);
   }
@@ -36,6 +31,7 @@ public class Actuator {
       if (syntaxRes != null) {
         Method method = syntaxRes.getMethod();
         Object[] args = syntaxRes.getArgs();
+        log.info("Method: {} invoke! args: {}.", method.getName(), Arrays.toString(args));
         switch (args.length) {
           case 0:
             method.invoke(syntaxRes.getObject());
@@ -150,8 +146,6 @@ public class Actuator {
                 methodAnnotation.value(), new ClassEntity<>(instance, method, parameterEntity));
           }
         }
-        log.debug("Read in all compiled commands :{}.", command.keySet());
-        return command;
       } catch (InstantiationException
           | IllegalAccessException
           | InvocationTargetException
@@ -159,6 +153,7 @@ public class Actuator {
         throw new InnerRuntimeExecution(e);
       }
     }
+    log.info("Read in all compiled commands :{}.", command.keySet());
     return command;
   }
 }

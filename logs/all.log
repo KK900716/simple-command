@@ -193,3 +193,39 @@
 2023-05-01 at 13:30:42 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - main
 2023-05-01 at 13:30:42 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - false
 2023-05-01 at 13:30:42 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-01 at 23:12:16 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:12:16 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-01 at 23:15:39 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:15:39 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-01 at 23:21:43 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerInterface
+2023-05-01 at 23:21:43 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:21:43 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerTest
+2023-05-01 at 23:21:43 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-01 at 23:26:03 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:26:03 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerInterface
+2023-05-01 at 23:26:03 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerTest
+2023-05-01 at 23:26:03 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-01 at 23:39:57 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:40:47 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:41:58 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:43:30 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:44:29 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:47:08 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:47:38 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:52:13 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:52:53 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:55:30 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:57:55 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-01 at 23:59:46 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:04:17 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:04:49 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:04:49 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 at 00:09:30 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:09:30 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 at 00:10:28 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:10:28 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 at 00:11:01 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:12:19 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 at 00:12:54 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 00:12:54 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
+2023-05-02 at 00:12:54 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, pa, print, pant, hou].
