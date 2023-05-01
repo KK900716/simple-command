@@ -25,8 +25,7 @@ public class Actuator {
     List<Class<ControllerInterface>> controller =
         ReflectionTool.getAllClass(
             ControllerInterface.class,
-            Controller.class,
-            ReflectionTool.getCurrentClassPath(ControllerInterface.class));
+            Controller.class);
     var cache = cacheAllCommands(controller);
     SYNTAX = new SyntaxInterpreter(cache);
   }
