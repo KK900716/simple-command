@@ -199,11 +199,11 @@
 2023-05-01 at 23:15:39 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
 2023-05-01 at 23:21:43 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerInterface
 2023-05-01 at 23:21:43 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
-2023-05-01 at 23:21:43 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerTest
+2023-05-01 at 23:21:43 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.TaskInit
 2023-05-01 at 23:21:43 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
 2023-05-01 at 23:26:03 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
 2023-05-01 at 23:26:03 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerInterface
-2023-05-01 at 23:26:03 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.ControllerTest
+2023-05-01 at 23:26:03 CST [main] [INFO]  c.e.~.~.~.ReflectionTool - com.example.sync.manager.controller.console.TaskInit
 2023-05-01 at 23:26:03 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
 2023-05-01 at 23:39:57 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
 2023-05-01 at 23:40:47 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
@@ -229,3 +229,72 @@
 2023-05-02 at 00:12:54 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
 2023-05-02 at 00:12:54 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, print, pant, hou].
 2023-05-02 at 00:12:54 CST [main] [DEBUG]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[p, pa, print, pant, hou].
+2023-05-02 at 18:26:43 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:26:43 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:26:43 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:26:43 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:26:43 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:26:43 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:26:43 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:26:47 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null].
+2023-05-02 at 18:26:56 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [one, null].
+2023-05-02 at 18:26:56 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name one
+2023-05-02 at 18:35:55 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:35:55 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:35:55 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:35:55 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:35:55 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:35:55 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:35:55 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:36:06 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [ljc, null, null].
+2023-05-02 at 18:36:06 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name ljc
+2023-05-02 at 18:36:11 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, null].
+2023-05-02 at 18:37:53 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:37:53 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:37:53 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:37:53 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:37:53 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:37:53 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:37:53 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:37:59 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [ljc, null, null].
+2023-05-02 at 18:37:59 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name ljc
+2023-05-02 at 18:38:05 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, null].
+2023-05-02 at 18:42:01 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:42:01 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:42:01 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:42:01 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:42:02 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:42:02 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:42:02 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:42:10 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:42:10 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:42:21 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, true].
+2023-05-02 at 18:42:31 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:42:31 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:43:23 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:43:23 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:43:48 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:43:48 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:43:48 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:43:48 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:43:48 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:43:48 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:43:48 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:44:22 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:44:22 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:44:44 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:44:44 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:46:51 CST [main] [INFO]  c.e.~.Main - Start application!
+2023-05-02 at 18:46:51 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start deamon!
+2023-05-02 at 18:46:51 CST [Deamon] [INFO]  c.e.~.~.~.Deamon - Deamon start!
+2023-05-02 at 18:46:51 CST [main] [INFO]  c.e.~.~.~.~.Actuator - Read in all compiled commands :[pa, session].
+2023-05-02 at 18:46:51 CST [main] [DEBUG]  c.e.~.~.~.ControllerManager - Finish init Actuator!
+2023-05-02 at 18:46:51 CST [main] [DEBUG]  c.e.~.~.Manager - Finish start controller!
+2023-05-02 at 18:46:51 CST [main] [DEBUG]  c.e.~.~.Manager - Finish init window!
+2023-05-02 at 18:47:00 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:47:00 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:47:04 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, true].
+2023-05-02 at 18:47:11 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [name, null, null].
+2023-05-02 at 18:47:11 CST [input] [DEBUG]  c.e.~.~.~.~.TaskInit - create session name name
+2023-05-02 at 18:47:16 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, true].
+2023-05-02 at 18:47:21 CST [input] [INFO]  c.e.~.~.~.~.Actuator - Method: test invoke! args: [null, null, delete].

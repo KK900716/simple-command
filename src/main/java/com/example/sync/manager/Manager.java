@@ -8,11 +8,12 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Manager {
   public static void runApplication(String[] args) throws SyncException {
-    Deamon.startDeamon();
+    Context context = Context.getInstance();
+    Deamon.startDeamon(context);
     log.debug("Finish start deamon!");
-    ControllerManager.initWindow();
-    log.debug("Finish init window!");
-    ControllerManager.startController();
+    ControllerManager.startController(context);
     log.debug("Finish start controller!");
+    ControllerManager.initWindow(context);
+    log.debug("Finish init window!");
   }
 }
